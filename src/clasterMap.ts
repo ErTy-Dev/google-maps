@@ -1,4 +1,5 @@
 import { MarkerClusterer } from '@googlemaps/markerclusterer'
+import './app.css'
 
 function initMap(): void {
 	const map = new google.maps.Map(document.getElementById('map') as HTMLElement, {

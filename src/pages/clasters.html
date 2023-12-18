@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon" />
+
+		<title>Карта дефолтная карта с маркером</title>
+		<link href="../app.css" rel="stylesheet" />
+	</head>
+	<body>
+		<main>
+			<header>
+				<nav>
+					<a href="/">Простая карта</a>
+					<a href="/clasters.html">Карта класстерами</a>
+				</nav>
+			</header>
+			<div class="container">
+				<h1>Карта c несколькими маркерами</h1>
+				<!-- <div id="map_default"></div> -->
+				<div id="map"></div>
+			</div>
+		</main>
+	</body>
+	<script type="module" src="../clasterMap.ts"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5_L9GsM9N9dUFv4WqWBHg-zkE3kQ_MeE&callback=initMap&v=weekly&library=maps"
+		defer
+	></script>
+</html>

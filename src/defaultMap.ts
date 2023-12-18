@@ -1,4 +1,5 @@
-const API_KEY_GOOGLE_MAP = 'AIzaSyC5_L9GsM9N9dUFv4WqWBHg-zkE3kQ_MeE'
+// const API_KEY_GOOGLE_MAP = 'AIzaSyC5_L9GsM9N9dUFv4WqWBHg-zkE3kQ_MeE'
+import './app.css'
 // Initialize and add the map
 let map
 async function initMapDefault(): Promise<void> {
