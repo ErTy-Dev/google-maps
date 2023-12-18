@@ -1,10 +1,13 @@
 const path = require('path')
 
 module.exports = {
-	entry: './src/index.ts',
+	entry: {
+		defaultMap: './src/defaultMap.ts',
+		clasterMap: './src/clasterMap.ts',
+	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js',
+		filename: '[name].bundle.js',
 	},
 	resolve: {
 		extensions: ['.ts', '.js'],

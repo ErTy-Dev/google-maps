@@ -15,5 +15,8 @@
 		"build": "webpack --mode production"
 	},
 	"author": "Erkutbek Turdubaev",
-	"license": "ISC"
+	"license": "ISC",
+	"dependencies": {
+		"@googlemaps/markerclusterer": "^2.5.2"
+	}
 }

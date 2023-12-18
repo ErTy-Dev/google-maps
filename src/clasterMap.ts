@@ -1,5 +1,7 @@
+import { MarkerClusterer } from '@googlemaps/markerclusterer'
+
 function initMap(): void {
-	const map = new google.maps.Map(document.getElementById('map_claster') as HTMLElement, {
+	const map = new google.maps.Map(document.getElementById('map') as HTMLElement, {
 		zoom: 3,
 		center: { lat: -28.024, lng: 140.887 },
 	})
@@ -32,7 +34,7 @@ function initMap(): void {
 
 	// Add a marker clusterer to manage the markers.
 	//@ts-ignore
-	new markerClusterer.MarkerClusterer({ markers, map })
+	new MarkerClusterer({ markers, map })
 }
 
 const locations = [
@@ -61,7 +63,6 @@ const locations = [
 	{ lat: -43.999792, lng: 170.463352 },
 ]
 
-//@ts-ignore
 declare global {
 	interface Window {
 		initMap: () => void
