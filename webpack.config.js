@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const Dotenv = require('dotenv-webpack')
 
 let mode = 'development' // По умолчанию режим development
 let target = 'web'
@@ -26,6 +27,7 @@ const plugins = [
 	new MiniCssExtractPlugin({
 		filename: '[name].[contenthash].css',
 	}),
+	new Dotenv(),
 ]
 
 module.exports = {

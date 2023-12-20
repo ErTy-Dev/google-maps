@@ -108,5 +108,5 @@
 		"typeRoots": ["node_modules/@types"],
 		"moduleResolution": "node"
 	},
-	"exclude": ["node_modules", "dist"]
+	"exclude": ["node_modules", "build"]
 }

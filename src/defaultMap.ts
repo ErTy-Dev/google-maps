@@ -1,14 +1,14 @@
 // const API_KEY_GOOGLE_MAP = 'AIzaSyC5_L9GsM9N9dUFv4WqWBHg-zkE3kQ_MeE'
+import { loadGoogleMAP } from './api'
 import './app.css'
-// Initialize and add the map
+
+loadGoogleMAP()
+
 let map
 async function initMapDefault(): Promise<void> {
-	// The location of Uluru
 	const positionCityBishkek = { lat: 42.882004, lng: 74.582748 }
 
-	// Request needed libraries.
 	const { Map } = (await google.maps.importLibrary('maps')) as google.maps.MapsLibrary
-	//@ts-ignore
 	const { Marker } = (await google.maps.importLibrary('marker')) as google.maps.MarkerLibrary
 
 	map = new Map(document.getElementById('map') as HTMLElement, {
@@ -24,4 +24,4 @@ async function initMapDefault(): Promise<void> {
 	})
 }
 
-initMapDefault()
+window.initMap = initMapDefault
