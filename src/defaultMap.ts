@@ -1,4 +1,3 @@
-// const API_KEY_GOOGLE_MAP = 'AIzaSyC5_L9GsM9N9dUFv4WqWBHg-zkE3kQ_MeE'
 import { loadGoogleMAP } from './api'
 import './app.css'
 
